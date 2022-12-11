@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+@using (Html.BeginForm("Search", "Person", FormMethod.Post))
+{
+    <span></span>
+    <br />
+    <span>Enter Your Name:</span> @Html.TextBox("Name", "Enter Name")
+    <br />
+    <span>Enter Your Country: </span>@Html.TextBox("Country", "Enter Country")
+    <br />
+
+
+    <input id="Submit" type="submit" value="Search " />
+}
